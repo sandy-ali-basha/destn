@@ -1,0 +1,68 @@
+.CompanyNews {
+  .headerDiv {
+    width: 80%;
+    height: 60vh;
+    margin: 10vh auto;
+    display: flex;
+    background: url(../imgs/companyNews/Header.png) center/contain no-repeat;
+    background-size: 100% 100%;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 3rem;
+    @include media("<=tablet") {
+      height: auto;
+      margin: 2vh auto;
+      padding: 2rem 0.5rem;
+      width: 90vw;
+    }
+    p {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 2rem;
+      line-height: 63px;
+      color: #ffffff;
+      width: 60%;
+      @include media("<=tablet") {
+        font-size: 1rem;
+        line-height: initial;
+        width: 100%;
+      }
+    }
+    h3 {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 30px;
+      background: linear-gradient(180deg, #ffffff 0%, #b6b6b6 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      @include media("<=tablet") {
+        line-height: initial;
+        font-size: 0.8rem;
+      }
+    }
+  }
+  .P_container {
+    padding: 3rem;
+
+    p {
+      font-weight: 600;
+      font-size: 1.2rem;
+      line-height: 30px;
+      color: #000000;
+      @include media("<=tablet") {
+        font-size: 1rem;
+        line-height: initial;
+      }
+    }
+    .Light_blue {
+      background: linear-gradient(180deg, #152982 0%, #677ddd 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}

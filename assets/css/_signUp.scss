@@ -1,0 +1,73 @@
+.signUp {
+  width: 100vw;
+  height: 100vh;
+  background: url("../imgs/loginBg.png") center/cover no-repeat;
+  .logo {
+    width: 13vw;
+    position: absolute;
+    top: 3vw;
+    left: 5vw;
+    img {
+      width: 100%;
+    }
+  }
+  .creatDiv {
+    width: 45vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    @include media("<=tablet") {
+      width: 100vw;
+      float: initial;
+      height: auto;
+      position: absolute;
+      height: 70vh;
+      bottom: 0px;
+      border-radius: 50px 50px 0px 0px;
+      padding: 5rem 20vw;
+    }
+    @include media("<=phone") {
+      padding: 5vh 5vw;
+      height: 80vh;
+    }
+    float: right;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 6px 22px rgba(137, 137, 137, 0.25);
+    backdrop-filter: blur(5px);
+    border-radius: 50px 0px 0px 50px;
+    padding: 3vw 9vw;
+    height: 100%;
+    .h1,
+    h1 {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 1.6rem;
+      color: #152982;
+    }
+    h3 {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1rem;
+      color: #152982;
+    }
+  }
+  .submitBtn {
+    font-size: 1.4rem !important;
+    padding: 1rem 3rem !important;
+    margin: 1.5rem auto !important;
+  }
+  .hvAccount {
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 30px;
+    color: #152982;
+    text-align: center;
+    span {
+      font-weight: 400;
+    }
+    a {
+      color: #152982;
+      font-weight: 600;
+    }
+  }
+}

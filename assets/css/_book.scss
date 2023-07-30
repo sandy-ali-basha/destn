@@ -1,0 +1,74 @@
+.book_label {
+  font-size: 1.7rem;
+  font-weight: 400;
+  @include media("<=tablet") {
+    font-size: 1rem;
+  }
+}
+.rd-container {
+  background: #ffffff;
+  /* Shadow */
+  box-shadow: 0px 30px 84px rgba(19, 10, 46, 0.08),
+    0px 8px 32px rgba(19, 10, 46, 0.07), 0px 3px 14px rgba(19, 10, 46, 0.03),
+    0px 1px 3px rgba(19, 10, 46, 0.13) !important;
+  border-radius: 60px;
+}
+.rd-days {
+  width: 55vw;
+}
+.rd-day-selected,
+.rd-time-selected,
+.rd-time-option:hover {
+  background: linear-gradient(
+    269.15deg,
+    #62daf3 14.76%,
+    #f38c16 100%
+  ) !important;
+  border-radius: 40px !important;
+}
+.trashBtn {
+  border-radius: 50px;
+  background-color: transparent;
+  border: none;
+}
+.book_from_navItem {
+  .nav-link {
+    background: linear-gradient(180deg, #dddddd -1.95%, #ffffff 19.15%);
+    padding: 0.6rem !important;
+  }
+  .done,
+  .active {
+    background: linear-gradient(
+      269.15deg,
+      #62daf3 14.76%,
+      #f38c16 100%
+    ) !important;
+  }
+  a {
+    border-radius: 50px;
+  }
+  border-radius: 50px !important;
+}
+.pickTime {
+  /* White */
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(19, 10, 46, 0.13);
+  border-radius: 60px;
+  padding: 1rem;
+  .time_btn {
+    background: #f3f2f5;
+    border-radius: 20px;
+    padding: 0.5rem 3rem;
+    border: none;
+    margin: 1rem auto;
+    @include media("<=phone") {
+      padding: 0.5rem;
+    }
+    &:focus,
+    &:hover,
+    &:focus-visible {
+      color: white;
+      background: linear-gradient(360deg, #152982 -0.01%, #677ddd 100%);
+    }
+  }
+}

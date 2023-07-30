@@ -1,0 +1,51 @@
+.brandbook {
+  .disc {
+    margin-inline-start: 5vw;
+    margin-inline-end: 5vw;
+    p {
+      font-weight: 400;
+      font-size: 35px;
+      line-height: 52px;
+      color: #081139;
+    }
+    background: url("../imgs/Brandbook/coloredBg.png") center/contain no-repeat;
+    background-size: 100% 100%;
+    padding: 4rem;
+    padding-top: 5rem;
+  }
+  .titleH1 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 72px;
+    color: #152982;
+    text-align: center;
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .titleH1Disc {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 38px;
+    color: #081139;
+    width: 70%;
+    margin: 1rem auto;
+  }
+}
+.px-5vw {
+  padding-inline-start: 5vw;
+  padding-inline-end: 5vw;
+}
+.inlineTitleH1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 72px;
+  color: #152982;
+  margin-right: 6vw;
+  margin-left: auto;
+}
+.titleLine {
+  width: 30vw;
+  height: auto;
+}

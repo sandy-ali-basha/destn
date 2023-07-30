@@ -1,0 +1,263 @@
+.contact_us_page {
+  .text {
+    margin-top: 17vh;
+    @include media("<=tablet") {
+      margin-top: 5vh;
+      flex-direction: column !important;
+      img {
+        width: 80vw !important;
+        position: relative;
+        right: 0px;
+        margin-left: auto;
+      }
+    }
+    .h1,
+    h1 {
+      font-weight: 700;
+      font-size: 2.7rem;
+      margin-inline-start: 16vw;
+      line-height: 75px;
+      @include media("<=tablet") {
+        margin: 2rem auto;
+      }
+      @include media("<=phone") {
+        font-size: 1.5rem;
+        line-height: initial;
+      }
+    }
+    .line {
+      width: 30vw;
+    }
+  }
+  .contact_header {
+    min-height: 130vh;
+    @include media("<=tablet") {
+      min-height: auto;
+    }
+  }
+  .contact_headerImg {
+    position: absolute;
+    width: 77vw;
+    right: 0px;
+    @include media("<=tablet") {
+      display: none;
+    }
+  }
+  .contact_map {
+    position: relative;
+    .map {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      border-radius: 60px;
+      * {
+        z-index: 1;
+      }
+      iframe {
+        width: 100%;
+        height: 100%;
+        border-radius: 60px;
+      }
+    }
+    // background: url("../imgs/contact/map.png") center/contain no-repeat;
+    width: 95vw;
+    margin: 10vh auto;
+    height: 140vh;
+
+    @include media("<=tablet") {
+      height: 60vh;
+    }
+    @include media("<=phone") {
+      background: url("../imgs/contact/map.png") center/cover no-repeat;
+      border-radius: 50px;
+    }
+    .content {
+      backdrop-filter: drop-shadow(
+        16.9px 14.9px 15.4px rgba(72, 72, 72, 0.42),
+        43px 38px 33px rgba(107, 107, 107, 0.42)
+      );
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background: url("../imgs/contact/bg.svg") center/contain no-repeat;
+      width: 40vw;
+      height: 120vh;
+
+      @include media("<=tablet") {
+        width: 60vw;
+      }
+      @include media("<=tablet") {
+        width: 90vw;
+      }
+    }
+  }
+
+  .contact_info_card {
+    filter: drop-shadow(0px 10px 19px rgba(159, 159, 159, 0.25));
+    padding: 0.6rem 0.3rem;
+    background: #fefefe;
+    border-radius: 38px;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 70%;
+    margin: 1rem auto;
+    @include media("<=tablet") {
+      width: 80%;
+      padding: 0.4rem 0.3rem;
+    }
+    &_text {
+      font-style: normal;
+      font-weight: 500;
+      line-height: 30px;
+      color: #081139;
+      margin-left: 0.5rem;
+    }
+    .icon {
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0.5rem 1rem;
+      width: 4vw;
+      height: 4vw;
+      filter: drop-shadow(0px 4px 6px rgba(152, 152, 152, 0.25));
+      @include media("<=tablet") {
+        padding: 0px;
+        width: 10vw;
+        height: auto;
+      }
+      @include media("<=tablet") {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .Our_latest_news {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 72px;
+    /* identical to box height */
+    color: #152982;
+    margin-left: 16vw;
+    @include media("<=tablet") {
+      margin-left: 9vw;
+      font-size: 2.5rem;
+    }
+  }
+
+  .contact_news {
+    background: transparent;
+    padding-top: 20vh;
+    @include media("<=tablet") {
+      padding-top: 30vh;
+    }
+    @include media("<=tablet") {
+      &_img {
+        width: 70vw;
+      }
+    }
+  }
+  .news_Swiper {
+    height: 130vh;
+    @include media("<=phone") {
+      height: 100vh;
+    }
+    .news_slide {
+      width: 100% !important;
+      height: 80vh !important;
+      @include media("<=tablet") {
+        width: 100vw !important;
+      }
+      @include media("<=phone") {
+        width: 80vw !important;
+        height: 50vh !important;
+      }
+      .contact_photo {
+        height: 100% !important;
+
+        width: 39vw !important;
+
+        padding-left: 4vw;
+        @include media("<=phone") {
+          width: 80vw !important;
+        }
+        img {
+          box-shadow: 0px 3px 10px rgb(0 0 0 / 22%);
+        }
+      }
+    }
+    .contact_Swiper_btn {
+      position: initial !important;
+    }
+    .contact_disc {
+      top: 70% !important;
+      left: 20% !important;
+      height: 45vh !important;
+      width: 70% !important;
+      padding: 3rem 3.6rem 1rem 3.6rem !important;
+      background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.95) 0%,
+        rgba(222, 222, 222, 0.95) 100%
+      ) !important;
+      box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.25) !important;
+      @include media("<=tablet") {
+        width: 75% !important;
+      }
+      @include media("<=phone") {
+        padding: 2rem 1rem !important;
+        height: auto !important;
+      }
+    }
+    .news_text {
+      font-size: 1.5rem;
+    }
+  }
+  .contact_more_btn {
+    background: linear-gradient(180deg, #3e3aff 0%, #081139 141.56%);
+    box-shadow: 0px 4px 20px rgba(16, 35, 119, 0.4);
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 36px;
+    padding: 0.7rem 2rem;
+    margin-left: auto;
+    color: #ffffff;
+    left: 57%;
+    position: relative;
+    border: none;
+    bottom: -20px;
+    @include media("<=tablet") {
+      bottom: 20px;
+    }
+    @include media("<=phone") {
+      position: initial;
+    }
+    img {
+      margin-left: 0.5rem;
+      margin-right: 0.5rem;
+    }
+  }
+}
+.contact_slide {
+  text-align: initial !important;
+  font-size: initial !important;
+  margin-block: initial !important;
+  background: initial !important;
+  box-shadow: initial !important;
+
+  backdrop-filter: initial !important;
+  border-radius: initial !important;
+  display: initial !important;
+  flex-direction: initial !important;
+  justify-content: initial !important;
+  align-items: initial !important;
+  height: initial !important;
+  object-fit: initial !important;
+}

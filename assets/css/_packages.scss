@@ -1,0 +1,556 @@
+.P_headerimg {
+  width: 110% !important;
+  @include media("<=phone") {
+    width: 75% !important;
+    margin: 2rem auto;
+  }
+}
+.Packages_h2 {
+  color: $orange;
+  font-weight: 600;
+  @include media("<=tablet") {
+    text-align: center;
+    width: 75%;
+    margin: 2rem auto;
+    font-size: 2rem;
+  }
+}
+.Branding_fordisktop {
+  @include media("<=tablet") {
+    display: none;
+  }
+}
+.Branding_forMobile {
+  @include media(">=tablet") {
+    display: none;
+  }
+}
+.Branding {
+  &__h1 {
+    background: linear-gradient(128.89deg, #6f0174 27.67%, #f38c16 94.73%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 1rem auto;
+    font-weight: 800;
+    font-size: 3rem;
+  }
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    padding-inline: 5vw;
+    justify-content: center;
+    @include media(">=phone", "<=tablet") {
+      padding-inline: 0vw;
+    }
+    @include media("<phone") {
+      padding-inline: 2vw;
+    }
+    &__card {
+      justify-content: space-between;
+      display: flex;
+      flex-direction: column;
+      width: 31.5%;
+      margin-inline: 0.3rem;
+      background: rgba(255, 255, 255, 0.5);
+      box-shadow: 0px 6px 22px rgba(137, 137, 137, 0.25);
+      backdrop-filter: blur(18px);
+      border-radius: 50px;
+      margin: 2rem 0.6rem;
+      padding-inline: 0.5rem;
+      @include media(">=phone", "<=tablet") {
+        width: 44%;
+        margin: 2rem 0.5rem;
+      }
+      @include media("<=phone") {
+        width: 95%;
+        margin: 1rem;
+      }
+      &_header {
+        background: url("../imgs/pckages/card_header.svg") center/contain
+          no-repeat;
+        color: white;
+        margin: 0.5rem;
+        width: 7vw;
+        height: 7vw;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 1.5rem;
+        @include center;
+        @include media(">=phone", "<=tablet") {
+          height: 11vw;
+          font-size: initial;
+          width: 11vw;
+        }
+        @include media("<phone") {
+          height: 16vw;
+          width: 16vw;
+          font-size: 1rem;
+        }
+      }
+      &_tag {
+        background: linear-gradient(90deg, #e4e4e4 0%, #ececec 99.84%);
+        border-radius: 30px;
+        transform: rotate(90deg);
+        padding: 1rem;
+        width: 9vw;
+        height: 6vw;
+        color: black;
+        font-weight: 500;
+        font-size: 1.3rem;
+        @include center;
+        @include media(">=phone", "<=tablet") {
+          width: 18vw;
+          height: 11vw;
+        }
+
+        @include media("<phone") {
+          width: auto;
+          font-size: 0.8rem;
+          height: auto;
+          padding: 0.5rem;
+          margin: 0.5rem;
+        }
+      }
+
+      &__price {
+        font-weight: 500;
+        font-size: 1.5rem;
+        text-align: center;
+        color: $primary_blue;
+        padding: 0.5rem 1rem;
+        margin: 1rem auto;
+        width: 60%;
+        background: #f4f4f4;
+        border-radius: 20px;
+        @include media("<tablet") {
+          font-size: 0.8rem;
+          margin: 0.5rem;
+          padding: 0.5rem;
+        }
+      }
+      &__priceExpanded {
+        width: auto;
+        margin: 1rem !important;
+        @include media("<tablet") {
+          margin: 0.4rem !important;
+        }
+      }
+      &__list {
+        list-style-image: url(../imgs/pckages/tick.svg);
+        li {
+          margin-left: 1rem;
+          font-size: 0.8rem;
+          @include media("<tablet") {
+            margin-left: 0rem;
+          }
+          padding-block: 0.5rem;
+          color: $primary_blue;
+          .dotted {
+            list-style-image: url(../imgs/pckages/purple_dot.svg);
+          }
+        }
+      }
+      &__readMore {
+        @include Clear-button;
+        margin-left: 2rem;
+        color: $orange;
+        font-weight: 700;
+        font-size: 1rem;
+        text-decoration: underline;
+        text-transform: uppercase;
+      }
+      &__orderNow {
+        color: white;
+        cursor: pointer;
+        font-size: 1.6rem;
+        font-weight: bold;
+        background: linear-gradient(180deg, #d24bd9 0%, #6f0174 141.56%);
+        box-shadow: 0px 4px 10px rgba(123, 123, 123, 0.4);
+        border-radius: 50px;
+        padding: 0.5rem;
+        width: 70%;
+        margin: 0 auto;
+        text-align: center;
+        margin-block: 2rem;
+        a {
+          text-decoration: none;
+          color: white;
+          &:hover {
+            color: white;
+          }
+        }
+        @include Clear-button;
+      }
+      &__btns {
+        width: 50%;
+        @include media("<=tablet") {
+          width: 80%;
+        }
+        @include media("<=phone") {
+          flex-direction: column;
+          button {
+            width: 90%;
+            margin: 0 auto;
+          }
+        }
+      }
+      &__goBack {
+        background: linear-gradient(360deg, #152982 -0.01%, #677ddd 100%);
+        box-shadow: 0px 4px 10px rgba(123, 123, 123, 0.4);
+      }
+    }
+  }
+}
+.max {
+  background: url(../imgs/max_card_bg.svg) center/contain no-repeat !important;
+}
+.tagExpanded {
+  transform: rotate(0deg) !important;
+  margin: 1rem;
+}
+.color-blue {
+  color: $primary_blue;
+}
+.bigCardHeader {
+  background: url("../imgs/pckages/big-card-header.svg") center/contain
+    no-repeat !important;
+  width: 14vw;
+  @include media("<=tablet") {
+    width: auto;
+    padding: 1rem;
+  }
+}
+
+// Package Projects
+.consultationBtn {
+  font-size: 1.3rem;
+  background: linear-gradient(0deg, #4b36ce -0.01%, #9797ff 100%);
+  box-shadow: 0px 4px 10px rgba(123, 123, 123, 0.4);
+}
+.PackageProjects {
+  &__text {
+    width: 50%;
+    @include media("<=tablet") {
+      width: 90%;
+    }
+  }
+  background: linear-gradient(162.98deg, #e6e6e6 11.13%, #ffffff 88.28%);
+  &__h1 {
+    color: $orange;
+    margin-block: 2rem;
+    display: inline-flex;
+    justify-content: center;
+    font-weight: 600;
+    width: 100%;
+    position: relative;
+    &_title {
+      @include media("<phone") {
+        width: 60vw;
+      }
+    }
+    &__line {
+      position: absolute;
+      right: 0px;
+      @include media("<=phone") {
+        top: -6vh;
+      }
+      img {
+        @include media("<=phone") {
+          width: 50vw;
+        }
+        width: 20vw;
+      }
+    }
+  }
+}
+.PROJECTS_packages {
+  background: none !important;
+  position: relative;
+}
+.siscription_Packages {
+  background: linear-gradient(
+    149.46deg,
+    rgba(255, 255, 255, 0.651) 5.97%,
+    rgba(241, 241, 241, 0.801) 90.7%
+  ) !important;
+  right: initial !important;
+  height: 35vh !important;
+  width: 70% !important;
+  @include media("<=phone") {
+    width: 90% !important;
+    padding: 1rem !important;
+  }
+  &__text {
+    font-size: initial !important;
+    h5 {
+      color: #152982;
+      font-weight: 700;
+      padding-bottom: 0.2rem;
+      margin: 0.6rem 0rem 1rem 0rem;
+    }
+    p {
+      color: #0f1530;
+    }
+  }
+  &__num {
+    background: linear-gradient(
+      133.01deg,
+      #f38c16 18.02%,
+      #d24bd9 43.68%,
+      #0ae3da 90.95%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+    font-size: 2rem;
+    @include media("<=phone") {
+      font-size: 2rem;
+    }
+  }
+}
+.photo__packages {
+  margin: initial !important;
+  width: 35vw !important;
+  height: 50vh !important;
+  box-shadow: none !important;
+  @include media("<=tablet") {
+    width: 70vw !important;
+  }
+  @include media("<=phone") {
+    width: 73vw !important;
+  }
+}
+// swiper //
+.slider_slider__package {
+  width: 40% !important;
+}
+
+.accordion-button {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.7) 0%,
+    #f3f3f3 100%
+  ) !important;
+  box-shadow: 1px 6px 17px rgba(138, 138, 138, 0.25) !important;
+  border-radius: 40px !important;
+  @include Clear-button;
+}
+.accordion-button_img {
+  width: 3vw;
+  @include media("<=phone") {
+    width: 10vw;
+  }
+}
+
+.accordion-collapse {
+  background: linear-gradient(
+    180deg,
+    rgba(230, 230, 230, 0.7) 0%,
+    rgba(244, 244, 244, 0.7) 100%
+  ) !important;
+  border: none !important;
+  border-bottom-left-radius: 40px !important;
+  border-bottom-right-radius: 40px !important;
+  margin-top: -24px;
+  padding-top: 24px;
+}
+.accordion-item {
+  background: transparent !important;
+  border: none !important;
+}
+.FAQ__bg_imgs {
+  position: relative;
+  width: 100%;
+  .rings {
+    position: absolute;
+    right: 0px;
+    .colorful_ring1 {
+      position: relative;
+      top: 160px;
+      width: 30%;
+    }
+  }
+  .wave {
+    @include media("<=tablet") {
+      display: none;
+    }
+    position: relative;
+    bottom: -30vh;
+  }
+}
+.FAQ {
+  background: #fbfbfb;
+  border-radius: 67px;
+  position: relative;
+  margin-top: 21vh;
+  padding: 12vh 3rem 3rem 3rem !important;
+  @include media("<phone") {
+    width: 90% !important;
+  }
+  &__title {
+    span {
+      background: linear-gradient(128.89deg, #6f0174 27.67%, #f38c16 94.73%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 700;
+      font-size: 1.5rem;
+    }
+    @include media("<=tablet") {
+      left: 25vw;
+      width: 50vw;
+    }
+    text-align: center;
+    width: 15vw;
+    position: absolute;
+    top: -8vh;
+    padding: 1rem;
+    left: 11%;
+    background: #fbfbfb;
+    border: 24px solid #f4f4f4;
+    border-radius: 100px;
+  }
+}
+.z-100 {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 99999999;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all 0.4s;
+}
+.z-show {
+  display: flex;
+  opacity: 1;
+  background: #f0f8ff73;
+}
+.expanded {
+  width: 70% !important;
+
+  @include media("<tablet") {
+    width: 90% !important;
+    padding-bottom: 2rem;
+    overflow-y: scroll;
+    height: 80vh;
+  }
+}
+.border-left {
+  border-left: 2px solid #c1c1c1;
+  @include media("<tablet") {
+    border-left: 2px solid #c1c1c100;
+  }
+}
+.Packages_line {
+  margin-top: 10vh !important;
+}
+.Packages_header {
+  min-height: initial !important;
+}
+.input {
+  @include Clear-button;
+  padding: 1rem;
+  color: #a4a4a4;
+  background: #ebebeb;
+  border-radius: 50px;
+}
+.form_card {
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 6px 22px rgba(137, 137, 137, 0.25);
+  backdrop-filter: blur(18px);
+  /* Note: backdrop-filter has minimal browser support */
+  margin-bottom: 10vh;
+  border-radius: 50px;
+}
+.formBtn {
+  box-shadow: 0px 4px 10px rgba(123, 123, 123, 0.4);
+  border-radius: 50px;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  @include Clear-button;
+  @include media("<=phone") {
+    width: 60vw;
+  }
+}
+
+.submit_btn {
+  background: linear-gradient(180deg, #0ae3da 0%, #081139 100%);
+  color: white;
+}
+.Cancel_btn {
+  background: linear-gradient(0deg, #d3d3d3 0%, #ffffff 100%);
+  color: #7f7f7f;
+}
+.Request__h2 {
+  font-size: 3rem;
+  @include media("<=tablet") {
+    font-size: 1rem;
+    text-align: center;
+  }
+  font-weight: bold;
+}
+.requestDemo__p {
+  @include media("<=tablet") {
+    text-align: center;
+    margin: 2rem auto;
+  }
+}
+.requestDemo__header {
+  min-height: 60vh;
+  @include media("<=tablet") {
+    min-height: initial;
+  }
+}
+.RequestAdemoH1andLine {
+  @include media("<=tablet") {
+    flex-direction: column;
+  }
+}
+.requestDemoImg,
+.col-md-1 {
+  @include media("<=tablet") {
+    display: none;
+  }
+}
+.FAQ_accourdion_body {
+  padding-inline: 6rem !important;
+
+  @include media("<=tablet") {
+    padding-inline: 1rem !important;
+  }
+}
+
+.package_Header {
+  @include media("<phone") {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+.brand_swiper_slide {
+  box-shadow: none !important;
+  background-color: transparent !important;
+  backdrop-filter: none !important;
+  height: initial !important  ;
+}
+.package_swiper_pagnation {
+  bottom: 10vh !important;
+}
+.package_swiperBtn {
+  top: -50px;
+}
+
+.package_order_container {
+  @include media("<phone") {
+    width: 90% !important;
+  }
+}

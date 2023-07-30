@@ -1,0 +1,126 @@
+.strategy {
+  &_header {
+    background: url(../imgs/strategy/header_bg.png) center center/cover
+      no-repeat;
+    margin-top: 0px !important;
+    @include media("<=tablet") {
+      padding-top: 5vh;
+    }
+    .services_header_div {
+      align-items: center;
+    }
+  }
+  &_h2 {
+    color: white;
+    font-size: 3.6rem;
+    text-transform: capitalize;
+    font-weight: 600;
+    @include media("<=tablet") {
+      font-size: 2rem;
+      text-align: center;
+    }
+  }
+  &_header_text {
+    height: 50vh;
+    justify-content: space-between !important;
+    @include media("<=tablet") {
+      height: initial;
+    }
+  }
+  &_p {
+    line-height: 33px;
+    font-weight: 400;
+    font-size: 1.3rem;
+    @include media("<=tablet") {
+      font-size: 1rem;
+      text-align: center;
+    }
+  }
+  &_header_img {
+    @include media("<=tablet") {
+      width: 80%;
+      margin-block: 2rem;
+    }
+  }
+  &_Hbutton {
+    padding: 1rem 3rem;
+    border: none;
+    color: white;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 38px;
+    /* identical to box height */
+    text-transform: capitalize;
+    color: #ffffff;
+    background: linear-gradient(360deg, #152982 -0.01%, #677ddd 100%);
+    box-shadow: 0px 4px 20px rgba(16, 35, 119, 0.4);
+    border-radius: 50px;
+  }
+  &_Arrow {
+    background: url(../imgs/strategy/arrow_down.svg) center center/contain
+      no-repeat;
+    @include media("<=tablet") {
+      height: 30vw;
+    }
+  }
+  &_h4 {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 60px;
+    background: linear-gradient(360deg, #152982 -0.01%, #677ddd 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    @include media("<=tablet") {
+      font-size: 1rem;
+    }
+  }
+  &_line-from-left {
+    @include media("<=tablet") {
+      display: none;
+    }
+  }
+  &_blue_lines {
+    /* blue linear */
+    margin: 1rem auto !important;
+    font-weight: 700 !important;
+
+    background: linear-gradient(360deg, #152982 -0.01%, #677ddd 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    @include media("<=tablet") {
+      text-align: center;
+    }
+  }
+  .strategy_content_title {
+    color: $orange;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    font-style: normal;
+  }
+  &_content {
+    background: transparent;
+    box-shadow: none;
+    .row {
+      background: transparent;
+      box-shadow: none;
+    }
+  }
+  &_content_btn {
+    padding: 1.5rem 4rem !important;
+    background: linear-gradient(360deg, #152982 -0.01%, #677ddd 100%);
+    box-shadow: 0px 4px 20px rgba(16, 35, 119, 0.4);
+    border-radius: 50px;
+    text-decoration: none;
+    color: white;
+    @include media("<=tablet") {
+      padding: 1rem 3rem !important;
+    }
+  }
+}

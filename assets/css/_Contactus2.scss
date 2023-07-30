@@ -1,0 +1,61 @@
+.incubatorProjectContactUs {
+  .title {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 48px;
+    text-align: center;
+    background: linear-gradient(
+      105.39deg,
+      #00a8ff -23.54%,
+      #6f0174 25.43%,
+      #fa5700 121.65%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 2rem auto;
+  }
+}
+.agree {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 33px;
+  color: #000000;
+  .dark-text {
+    color: #00a8ff;
+  }
+  @include media("<=tablet") {
+    font-size: 1rem;
+  }
+}
+.submitContact {
+  padding: 1.5rem 8rem;
+  border: none;
+  filter: drop-shadow(0px 4px 20px rgba(16, 35, 119, 0.4));
+  border-radius: 50px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 36px;
+  color: #ffffff;
+  margin-left: auto;
+  margin-right: 4vw;
+  background: rgb(194, 78, 46);
+  background: linear-gradient(
+    95deg,
+    rgba(194, 78, 46, 1) 0%,
+    rgba(153, 84, 81, 1) 31%,
+    rgba(16, 143, 216, 1) 100%
+  );
+  @include media("<=tablet") {
+    font-size: 1rem;
+    padding: 1rem 5rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

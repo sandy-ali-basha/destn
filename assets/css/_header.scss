@@ -1,0 +1,532 @@
+.header {
+  min-height: 90vh;
+  @include media("<phone") {
+    min-height: initial;
+  }
+  > div {
+    padding-left: 6vw;
+  }
+  .headerimgDiv {
+    @include media("<phone") {
+      padding: initial;
+    }
+  }
+  .line-under-app {
+    position: ABSOLUTE;
+    width: 34vw;
+    left: 0vw;
+
+    @include media(">phone", "<=tablet") {
+      width: 60vw;
+    }
+    @include media("<=phone") {
+      width: 80vw;
+      margin-top: -6vh;
+    }
+  }
+
+  .h1,
+  h1 {
+    background-clip: text;
+    font-size: 4rem;
+    font-weight: 700;
+    background: -webkit-linear-gradient(316deg, #6f0174 9.67%, #f38c16 61.73%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    margin: 9vh 0vh;
+
+    @include media("<=phone") {
+      margin: 2vh auto;
+    }
+  }
+
+  .headerimg {
+    width: 75%;
+
+    @include media(">=LGdesktop") {
+      width: 100%;
+    }
+  }
+
+  p {
+    font-size: 1.3rem;
+
+    color: $primary_blue;
+    font-weight: 600;
+
+    @include media("<=phone") {
+      font-size: 1.5rem;
+      margin-top: 5vh;
+    }
+    @include media("<=1367px") {
+      font-size: 1.3rem;
+    }
+  }
+}
+
+.our-apps {
+  position: relative;
+
+  .our-apps-h1 {
+    color: $orange;
+    font-size: 3rem;
+    position: relative;
+    margin-left: 4vw;
+
+    @include media("<=tablet") {
+      text-align: center;
+      font-size: 2.5rem;
+    }
+  }
+
+  .wave {
+    position: absolute;
+    top: -20px;
+    left: -100px;
+    width: 90px;
+    height: 17.3vh;
+  }
+
+  .our-apps-p {
+    color: $primary_blue;
+
+    font-weight: 500;
+    width: 40vw;
+    margin-top: 2rem;
+    margin-left: 9vw;
+
+    @include media("<=tablet") {
+      text-align: center;
+      width: 100%;
+      margin-left: 0vw;
+    }
+
+    @include media("<=phone") {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.swiper {
+  margin-block: 2rem;
+  min-height: 65vh;
+  padding-block: 2rem;
+  padding-inline: 4vw;
+  width: 100vw !important;
+  @include media("<=phone") {
+    padding-inline: 5vw !important;
+  }
+}
+
+.blue-circle {
+  position: absolute;
+  width: 284px;
+  height: 278px;
+  left: -95px;
+  top: 29vh;
+  background: #afadee;
+  opacity: 1;
+  -webkit-filter: blur(150px);
+  filter: blur(150px);
+  z-index: -1;
+}
+
+.green-circle {
+  position: absolute;
+  width: 319px;
+  height: 312px;
+  right: -9vw;
+  top: 60vh;
+  background: #2e408c33;
+  -webkit-filter: blur(150px);
+  filter: blur(90px);
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  margin-block: 2rem;
+  background: #fafafa;
+  box-shadow: 0px 6px 22px #89898940;
+  backdrop-filter: blur(18px);
+  border-radius: 63px;
+  /* Center slide text vertically */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 75vh !important;
+  object-fit: cover;
+
+  @include media(">=LGdesktop") {
+    height: 60vh !important;
+  }
+
+  @include media("<=phone") {
+    height: 52vh !important;
+  }
+
+  .gray-div {
+    height: 3vh;
+    width: 50%;
+    margin: 0 auto;
+    background: #d9d9d9;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+  }
+
+  .content {
+    width: 100%;
+
+    @include center;
+    flex-direction: column;
+    align-content: center !important;
+    min-height: 80%;
+    padding-block: 2rem;
+    justify-content: space-around;
+
+    .icon {
+      @include center;
+      background: linear-gradient(180deg, #f1f1f1 -11.65%, #f3f3f3 100%);
+      box-shadow: -2px -4px 12px #ffffff, 2px 4px 7px rgba(0, 0, 0, 0.25);
+      border-radius: 20px;
+    }
+
+    h2 {
+      @include media(">=LGdesktop") {
+        font-size: 3rem;
+      }
+
+      color: $purple;
+    }
+
+    p {
+      width: 70%;
+      color: $primary_blue;
+
+      @include media(">phone", "<=tablet") {
+        width: 90%;
+      }
+    }
+  }
+
+  .btns {
+    width: 90%;
+    display: inline-flex;
+    height: 7vh;
+    margin-bottom: 2rem;
+    @include center;
+
+    button {
+      @include Clear-button;
+      background: linear-gradient(180deg, #ffffff 0%, #d3d3d3 100%);
+      box-shadow: 0px 7px 13px rgba(0, 0, 0, 0.25);
+      border-radius: 100px;
+      color: $purple;
+      padding-inline: 2rem;
+    }
+
+    .supportIcon {
+      background: linear-gradient(180deg, #f38c16 0%, #fa5700 100%);
+      box-shadow: 0px 7px 13px rgba(0, 0, 0, 0.25);
+      border-radius: 100px;
+      @include center;
+      width: 7vh;
+
+      img {
+        width: 70%;
+
+        @include media("<=phone") {
+          width: 50%;
+        }
+      }
+    }
+
+    button,
+    .supportIcon {
+      margin-inline: 0.4rem;
+      height: 100%;
+    }
+  }
+}
+
+.MoreApps {
+  position: relative;
+
+  .colorfull-ring {
+    position: absolute;
+    right: 10vw;
+    top: -3vh;
+  }
+
+  .ring2 {
+    top: 28vh;
+    right: -3rem;
+    z-index: -1;
+  }
+
+  .searchInput {
+    filter: drop-shadow(0px 4px 12px rgba(137, 137, 137, 0.25));
+
+    @include media("<=tablet") {
+      width: 100%;
+    }
+
+    input {
+      background: linear-gradient(180deg, #ececec -14.81%, #fbfbfb 100%);
+      border-bottom-left-radius: 100px;
+      border-top-left-radius: 100px;
+      padding: 1rem;
+      border: none;
+    }
+
+    margin: 3rem auto;
+    width: 60%;
+
+    .searchBox {
+      padding: 0.5rem 1rem;
+      background: linear-gradient(179.78deg, #7570ff 0.19%, #152982 124.5%);
+      border-radius: 5px 100px 100px 5px;
+    }
+  }
+  .filterTapsNavBtn {
+    background: linear-gradient(180deg, #fafafa 0%, #f0f0f0 100%);
+    border-radius: 29px;
+    padding: 0.5rem;
+    box-shadow: 0px 4px 12px rgba(137, 137, 137, 0.25);
+    width: 60vw;
+    margin-top: 2rem;
+    img {
+      width: 20% !important;
+      @include media("<=tablet") {
+        width: 14% !important;
+        margin-inline: 0.4rem;
+        margin-block: 0.5rem;
+      }
+    }
+  }
+  .filterTaps {
+    @include media("<=phone") {
+      flex-direction: column;
+    }
+
+    margin-top: 2rem;
+    display: inline-flex;
+    width: 100%;
+    background: linear-gradient(180deg, #fafafa 0%, #f0f0f0 100%);
+    box-shadow: 0px 4px 12px rgba(137, 137, 137, 0.25);
+    border-radius: 29px;
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    padding: 0.5rem;
+
+    .navbtn {
+      background-color: darkblue;
+    }
+
+    button,
+    .navbtn {
+      @include Clear-button;
+
+      color: #585858;
+      margin: 0rem 0.4rem;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      height: 50px;
+
+      &:hover,
+      &:active,
+      &:focus-visible {
+        background: #e2e2e2;
+      }
+    }
+
+    .activeBtn {
+      background: #e2e2e2;
+      color: #151515;
+      font-weight: 600;
+      .badge {
+        background: linear-gradient(180deg, #152982 0%, #677ddd 100%);
+        border-radius: 10px;
+        color: white;
+
+        padding: 10px;
+        margin-left: 5px;
+      }
+    }
+    .badge {
+      background: linear-gradient(180deg, #ffffff75 0%, #b6b6b681 100%);
+      padding: 10px;
+
+      border-radius: 10px;
+      color: #7f7f7f;
+    }
+  }
+}
+
+.title-card {
+  @include media(">phone", "<=tablet") {
+    min-width: 35vw;
+  }
+
+  @include media("<=phone") {
+    min-width: 80vw;
+    margin: 2vh auto;
+  }
+
+  .purple-bar {
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    width: 20px;
+    height: 55px;
+    background: linear-gradient(160.08deg, #7570ff 13.76%, #152982 115.85%);
+    -webkit-box-shadow: 0px 4px 22px #89898940;
+    box-shadow: 0px 4px 22px #89898940;
+    border-radius: 25px;
+  }
+
+  margin-top: 5rem;
+  position: relative;
+  height: 55px;
+  color: $primary_blue;
+  font-size: 1.5rem;
+  width: fit-content;
+  padding-inline: 2rem;
+  background: linear-gradient(180deg, #fafafa 0%, #f0f0f0 100%);
+  box-shadow: 0px 4px 12px #89898940;
+  border-radius: 29px;
+  @include center;
+}
+
+.need-help {
+  background: url(../imgs/shaps/footer-wave.svg) center/cover no-repeat;
+  width: 100vw;
+  height: 55vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20vh 0px;
+
+  @include media("<=phone") {
+    height: 100%;
+    margin: 3vh 0px;
+  }
+
+  .glass-card {
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 0px 16px 29px rgba(0, 0, 0, 0.08);
+    backdrop-filter: blur(6px);
+    border-radius: 50px;
+    width: 75%;
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include media("<=phone") {
+      height: 60vh;
+      width: 90%;
+    }
+
+    .h1,
+    h1 {
+      text-align: center;
+      text-transform: uppercase;
+      color: $primary_blue;
+      margin-block: 2rem;
+      font-weight: 600;
+
+      @include media("<=phone") {
+        padding-inline: 1rem;
+      }
+    }
+
+    .btns {
+      display: inline-flex;
+
+      @include media(">phone", "<=tablet") {
+        margin-block: 0.5rem;
+        padding: 0.5rem 1rem;
+      }
+
+      @include media("<=phone") {
+        flex-direction: column;
+      }
+
+      button {
+        font-weight: 600;
+        margin-inline: 1rem;
+        color: white;
+        border: none;
+        outline: none;
+        margin-block: 1rem;
+        padding: 1rem 2rem;
+      }
+
+      .purple {
+        background: linear-gradient(178.76deg, #d24bd9 1.06%, #6f0174 113.52%);
+        box-shadow: 0px 4px 20px rgba(123, 123, 123, 0.4);
+        border-radius: 50px;
+      }
+
+      .blue {
+        background: linear-gradient(179.66deg, #002fff 0.3%, #152982 99.7%);
+        box-shadow: 0px 4px 20px rgba(123, 123, 123, 0.4);
+        border-radius: 50px;
+      }
+    }
+  }
+}
+
+.cardSlide {
+  width: 100% !important;
+
+  @include media("<=phone") {
+    width: 90% !important;
+    margin: 2vh auto;
+  }
+}
+
+.wrapperr {
+  display: flex;
+  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 23px;
+  grid-row-gap: 0px;
+
+  @include media(">phone", "<=tablet") {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+  }
+
+  @include media("<=phone") {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.navbar-toggler {
+  border: none;
+  outline: none;
+
+  &:focus,
+  &:active,
+  &:focus-visible {
+    border: none;
+    outline: none;
+    box-shadow: none !important;
+  }
+
+  img {
+    width: 80%;
+  }
+}

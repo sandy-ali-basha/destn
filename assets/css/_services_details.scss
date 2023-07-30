@@ -1,0 +1,307 @@
+.Line_services_detail_div {
+  width: 100vw;
+  height: 11vh;
+  position: static;
+  left: -14vw;
+  @include media("<=phone") {
+    width: 100%;
+  }
+}
+.Line_services_detail {
+  width: 34vw;
+  position: absolute;
+  left: 0vw;
+  @include media("<=phone") {
+    width: 65vw;
+  }
+}
+
+.services_detail {
+  .our_Featured_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    @include media("<=phone") {
+      text-align: center;
+    }
+  }
+
+  .text_orange {
+    color: $orange;
+    font-weight: 600;
+  }
+  .p {
+    font-weight: 600;
+    font-size: 1.3rem;
+  }
+  .text {
+    margin-bottom: 30vh;
+    @include media("<=tablet") {
+      margin-bottom: 1vh;
+    }
+  }
+  .our_Featured {
+    margin-top: 20vh;
+  }
+
+  .our_Featured_cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5vh;
+    @include media("<tablet") {
+      display: initial;
+    }
+  }
+  .content {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+  .blue_light {
+    position: absolute;
+    left: 0px;
+  }
+  .card {
+    margin: 1rem;
+    margin-bottom: 8vw;
+    background: #f6f6f6 url(../imgs/services_details/our_featured__card_bg.svg)
+      left bottom/contain no-repeat;
+    border-radius: 60px !important;
+    border: none !important;
+    width: 349px;
+    min-height: 300px;
+    box-shadow: 0px 154px 61px rgba(0, 0, 0, 0.01),
+      0px 86px 52px rgba(0, 0, 0, 0.05), 0px 38px 38px rgba(0, 0, 0, 0.09),
+      0px 10px 21px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10vh 1vh;
+    @include media("<=tablet") {
+      margin: auto;
+      margin-top: 10vh !important;
+      width: inherit;
+      min-height: 50vh !important;
+      width: 80% !important;
+      padding: 7vh 1vh;
+    }
+    p {
+      text-align: center;
+    }
+    &_title {
+      font-weight: 700;
+    }
+    &_p {
+      font-weight: 600;
+    }
+    &:nth-child(odd) {
+      margin-top: +10vh;
+      @include media("<=tablet") {
+        margin-top: initial;
+      }
+    }
+  }
+  .more_card {
+    margin: 1rem;
+    margin-bottom: 8vw;
+    background: #f6f6f6 url(../imgs/services_details/our_featured__card_bg.svg)
+      left bottom/contain no-repeat;
+    border-radius: 60px !important;
+    border: none !important;
+    width: 349px;
+    box-shadow: 0px 154px 61px rgba(0, 0, 0, 0.01),
+      0px 86px 52px rgba(0, 0, 0, 0.05), 0px 38px 38px rgba(0, 0, 0, 0.09),
+      0px 10px 21px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    &:nth-child(odd) {
+      margin-top: 10vh !important;
+    }
+    padding: 3rem 1rem;
+    height: 60vh;
+    @include media("<=tablet") {
+      width: 100%;
+      margin: inherit !important;
+      height: inherit !important;
+      padding: 3rem 1rem;
+    }
+    @include media("<=phone") {
+      width: inherit !important;
+    }
+    .card_title {
+      margin-bottom: 3vh;
+    }
+    .card_p {
+      font-size: 1rem;
+    }
+    margin-bottom: initial !important;
+  }
+  .more_swiper_slide {
+    box-shadow: 0px 70px 30px rgba(0, 0, 0, 0.01) !important;
+    display: initial !important;
+    height: initial !important;
+    border-radius: initial !important;
+    backdrop-filter: blur(0px) !important;
+    margin: auto;
+    width: initial !important;
+    background: rgba(255, 255, 255, 0) !important;
+    margin: 1px 13px;
+    @include media("<=tablet") {
+      width: 50% !important;
+    }
+    @include media("<=phone") {
+      width: inherit !important;
+      height: inherit !important;
+    }
+  }
+  .card_slide {
+    box-shadow: 0px 70px 30px rgba(94, 17, 17, 0) !important;
+    border-radius: initial !important;
+    backdrop-filter: blur(0px) !important;
+    background: rgba(255, 255, 255, 0) !important;
+  }
+  .icon {
+    background: linear-gradient(
+      165.53deg,
+      #ffffff 7.06%,
+      rgba(196, 196, 196, 0) 92.03%
+    );
+    /* effect1 */
+    width: 8vw;
+    height: 8vw;
+    border-radius: 50%;
+    left: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    position: absolute;
+    top: -4vw;
+    filter: drop-shadow(-2px -4px 12px #ffffff)
+      drop-shadow(2px 4px 7px rgba(0, 0, 0, 0.25));
+    img {
+      width: 80%;
+    }
+    @include media("<=tablet") {
+      width: 10vw;
+      height: 10vw;
+      left: 40%;
+      top: -5vw;
+    }
+    @include media("<=phone") {
+      width: 20vw;
+      height: 20vw;
+      left: 35%;
+      top: -10vw;
+    }
+  }
+  .next {
+    position: absolute;
+    background: linear-gradient(180deg, #ffffff 0%, #b6b6b6 100%);
+    box-shadow: -2px -3px 10px rgba(255, 255, 255, 0.815),
+      0px 10px 14px rgba(0, 0, 0, 0.21);
+    width: 4vw;
+    height: 4vw;
+    border-radius: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 2vw;
+    right: 2vw;
+    @include media("<=tablet") {
+      bottom: 5vw;
+      right: 7vw;
+      width: 10vw;
+      height: 10vw;
+    }
+  }
+  .our_featured_bg {
+    position: absolute;
+    z-index: -1;
+    top: -19vh;
+    right: 2vw;
+  }
+  .ring {
+    width: 17vw;
+    position: relative;
+    img {
+      position: absolute;
+      left: 11vw;
+      top: 19vh;
+      width: 100%;
+    }
+  }
+  .ring2 {
+    position: relative;
+    width: 100%;
+    img {
+      position: absolute;
+      right: 20vw;
+      top: -90px;
+      width: 15vw;
+    }
+  }
+  .more_swiper {
+    min-height: 80vh;
+    @include media("<=tablet") {
+      min-height: auto;
+      padding-bottom: 10vh;
+    }
+  }
+}
+.explore_title {
+  display: inline-flex;
+  position: relative;
+  width: 100%;
+  &_text {
+    text-align: center;
+    width: 100%;
+    font-size: 2rem;
+    margin-block: 1rem;
+    font-weight: 600;
+    color: $orange;
+  }
+  &_img {
+    position: absolute;
+    right: -70px;
+    @include media("<=tablet") {
+      position: relative;
+      right: -10px;
+    }
+  }
+  @include media("<=tablet") {
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+.services_P_headerimg {
+  @include media("<=phone") {
+    width: 50% !important;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+  }
+}
+.for_labtop {
+  @include media("<=tablet") {
+    display: none !important;
+  }
+}
+
+.for_mobile {
+  @include media(">=tablet") {
+    display: none !important;
+  }
+}
+
+.more_about_design {
+  @include media("<=tablet") {
+    text-align: center;
+  }
+}

@@ -1,0 +1,167 @@
+.SolutionsLabel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  @include media("<=phone") {
+    flex-direction: column;
+  }
+  .line_wave,
+  .lineOnly {
+    width: 40vw;
+    @include media("<=phone") {
+      width: 80%;
+    }
+    img {
+      width: 100%;
+    }
+  }
+  .line_wave {
+    @include media("<=phone") {
+      margin-right: auto;
+    }
+  }
+  .lineOnly {
+    @include media("<=phone") {
+      margin-left: auto;
+    }
+  }
+  .title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.3rem;
+    line-height: 60px;
+    text-align: center;
+    color: #f38c16;
+  }
+}
+.SolutionsP {
+  font-weight: 600;
+  font-size: 1.7rem;
+  line-height: 45px;
+  color: #1c2891;
+  text-align: center;
+  width: 70vw;
+  margin-inline: auto;
+  margin-top: -10vh;
+  @include media("<=tablet") {
+    margin-top: 0px;
+  }
+}
+.contentOfSolutions {
+  background: linear-gradient(
+    180deg,
+    rgb(255 255 255 / 57%) 0%,
+    rgb(255 255 255 / 87%) 100%
+  );
+  position: relative;
+  filter: drop-shadow(0px 14px 25px rgba(56, 56, 56, 0.25));
+  backdrop-filter: blur(2px);
+  border-radius: 70px;
+  margin: 1rem;
+  padding: 2.5rem 2rem;
+  height: 70vh;
+  @include media("<=tablet") {
+    height: initial;
+  }
+  .first {
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    .title_Icon {
+      width: 20%;
+      margin-right: 2rem;
+    }
+    .gradientTitle {
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 60px;
+      text-transform: uppercase;
+      background: linear-gradient(180deg, #152982 0%, #677ddd 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      @include media("<=tablet") {
+        font-size: 1.2rem;
+        line-height: initial;
+      }
+    }
+  }
+  .discib {
+    font-style: normal;
+    font-weight: 600;
+    width: 90%;
+    font-size: 1.8rem;
+    line-height: 45px;
+    color: #1c2891;
+    margin-top: 1rem;
+    @include media("<=tablet") {
+      font-size: 1rem;
+    }
+    @include media("<=phone") {
+      line-height: initial;
+      text-align: center;
+    }
+  }
+  .blueBtn,
+  .purpleGradientBtn {
+    filter: drop-shadow(0px 4px 20px rgba(16, 35, 119, 0.4));
+    border-radius: 50px;
+    color: white;
+    font-weight: 700;
+    padding: 2rem;
+    font-size: 22px;
+    font-size: 1.3rem;
+    margin: 1rem;
+    border: none;
+    letter-spacing: 2px;
+    @include media("<=tablet") {
+      font-size: 1rem;
+      line-height: initial;
+      padding: 0.4rem 1rem;
+    }
+    @include media("<=tablet") {
+      padding: 0.6rem 1rem;
+      margin: 1rem 0.2rem;
+    }
+  }
+  .blueBtn {
+    background: linear-gradient(180deg, #3e3aff 0%, #081139 141.56%);
+    width: 40%;
+  }
+  .purpleGradientBtn {
+    width: 60%;
+    background: linear-gradient(
+      95deg,
+      rgba(196, 175, 210, 1) 0%,
+      rgba(231, 128, 222, 1) 100%
+    );
+    svg {
+      height: 60%;
+    }
+  }
+}
+.SolutionsDiv {
+  margin-top: 20vh;
+  margin-bottom: 20vh;
+  @include media("<=tablet") {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+  }
+  &:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+}
+.lowBtns {
+  position: absolute;
+  width: 90%;
+  margin: 0 auto;
+  bottom: -70px;
+  @include media("<=tablet") {
+    bottom: -50px;
+  }
+  @include media("<=phone") {
+    bottom: -40px;
+  }
+}

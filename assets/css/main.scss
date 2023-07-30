@@ -1,0 +1,179 @@
+@import "./breakpoints";
+@import "./font", "./variables", "./navbar", "./header", "./scroll-bar",
+  "./app_details", "./home", "./footer";
+@import "./packages", "./popups", "./imprint", "./services_details",
+  "./services", "./contactUs";
+@import "./proposal", "./book", "./strategy", "./startProject.scss", "./offers",
+  "./Community", "./Contactus2", "./SALESREPRESENTATIVE", "./CompanyNews",
+  "./solutions", "./solutions_features", "./faq", "./Question&answare",
+  "./partnership", "./signUp", "./404", "./portfolio";
+@import "./brandbook", "./WhoWeAre", "./agences";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: Poppins;
+  padding: 0;
+  transition: all 0.5s;
+  word-break: break-word;
+}
+.floating {
+  animation: floating 4s infinite forwards ease;
+}
+@keyframes floating {
+  0% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(+10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+.nav-link {
+  word-break: initial !important;
+}
+
+.swiper-button-disabled {
+  background: linear-gradient(180deg, #ffffff 0%, #e0e0e0 100%);
+}
+.swiper-pagination-bullet {
+  width: 20px !important;
+  height: 20px !important;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  background: #c4c4c4;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  color: #fff;
+  background: #fa5700 !important;
+}
+body {
+  background-color: #f4f4f4 !important;
+  overflow-x: hidden;
+
+  @include media("<=phone") {
+    overflow-x: hidden;
+  }
+  .bac-primary {
+    background-color: $primary_blue !important;
+  }
+  .text-purple {
+    color: #6f0174;
+  }
+}
+
+.text-black {
+  color: black !important;
+}
+.footerBtn {
+  border-radius: 100px;
+  background: linear-gradient(180deg, #e1e1e1 0%, rgba(225, 225, 225, 0) 100%);
+  filter: drop-shadow(2px -4px 4px rgba(255, 255, 255, 0.49))
+    drop-shadow(7px 6px 9px rgba(122, 122, 122, 0.21));
+  padding: 1rem 2rem;
+  background: linear-gradient(180deg, #d9d9d9 0%, #ffffff 100%);
+  width: 20vw;
+  @include media("<=tablet") {
+    width: 40vw;
+    margin: 0.5rem auto;
+    border-radius: 50px;
+  }
+  @include media("<=phone") {
+    width: 70vw;
+    margin: 0.5rem auto;
+  }
+}
+.color-purple {
+  color: $purple;
+}
+.backToTop {
+  position: fixed;
+  right: 3vw;
+  bottom: 5vh;
+  width: 5vw;
+  height: 5vw;
+  border-radius: 50%;
+  background: linear-gradient(90deg, #152982 1.17%, #002fff 107.73%);
+  box-shadow: 0px 10px 14px rgba(0, 0, 0, 0.21);
+  @include Clear-button;
+  @include media("<=phone") {
+    width: 10vw;
+    height: 10vw;
+    left: 15vw;
+    right: auto;
+    img {
+      width: 80%;
+    }
+  }
+}
+.projectDone_pagnation {
+  left: initial;
+}
+
+.project_Swiper_btns {
+  @include media("<tablet") {
+    top: initial;
+    left: initial;
+  }
+}
+
+.mx-xs-auto {
+  @include media("<phone") {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.flex_revise {
+  display: flex;
+  flex-direction: column;
+  @include media("<=tablet") {
+    flex-direction: column-reverse;
+  }
+}
+.termsDataContent {
+  @include media("<=phone") {
+    width: 90% !important;
+  }
+}
+.w-xs-100 {
+  @include media("<=phone") {
+    width: 100%;
+  }
+}
+
+/* the background color of the file and file panel (used when dropping an image) */
+.filepond--item-panel {
+  background-color: rgb(255, 255, 255) !important;
+  // border: 1px solid red;
+  border-image: linear-gradient(to right, #62daf3, #f38c16) 1;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 50px;
+}
+
+/* the icon color of the black action buttons */
+.filepond--file-action-button {
+  color: #0f0f0f !important;
+  background-color: #f4f4f4 !important;
+}
+
+/* the text color of the file status and info labels */
+.filepond--file {
+  color: #0f0f0f !important;
+  background-color: #f4f4f4 !important;
+  border-width: 1px;
+  border-style: solid;
+  border-image: linear-gradient(to right, #62daf3, #f38c16) 1;
+}
+.filepond--drop-label {
+  font-size: 1.5rem;
+  border: 1px solid;
+  border-image: linear-gradient(to right, #62daf3, #f38c16) 10;
+  border-radius: 50px;
+  margin-bottom: 10px !important;
+}

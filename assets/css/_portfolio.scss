@@ -1,0 +1,213 @@
+.portfolioLine {
+  width: 80%;
+  margin-left: -6vw;
+  margin-top: -34vh;
+}
+.PH1 {
+  margin-top: 40vh !important;
+  padding-left: 10vw;
+}
+.PHeaderImg {
+  margin-inline-end: 15vw;
+  width: 100%;
+}
+.TreasuresHeaderRevirse {
+  flex-direction: row-reverse;
+  justify-content: initial !important;
+  .lineContainer {
+    left: 0px;
+    right: auto !important;
+  }
+  .TreasuresH1 {
+    text-align: center;
+    width: 70%;
+  }
+}
+.TreasuresHeader {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  .TreasuresH1 {
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 72px;
+    color: #152982;
+  }
+  .lineContainer {
+    width: 30vw;
+    position: absolute;
+    right: 0px;
+    .line {
+      width: 100%;
+    }
+  }
+}
+
+.TreasuresDisc {
+  margin: 2rem auto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 38px;
+  text-align: center;
+  color: #081139;
+  width: 50%;
+}
+.TreasuresCardContainer {
+  display: flex;
+  padding-inline-start: 5vw;
+  padding-inline-end: 5vw;
+  flex-wrap: wrap;
+}
+
+.TreasuresCard {
+  width: 26vw;
+  margin: 1rem;
+  background: #fafafa;
+  box-shadow: 0px 6px 22px rgba(137, 137, 137, 0.25);
+  backdrop-filter: blur(9px);
+  border-radius: 63px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+  text-align: center;
+  min-height: 60vh;
+  .disc {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: #152982;
+    width: 80%;
+  }
+}
+.iconOfTeaser {
+  width: 8vw;
+  height: 8vw;
+  background: linear-gradient(180deg, #f1f1f1 -11.65%, #f3f3f3 100%);
+  box-shadow: -2px -4px 12px #ffffff, 2px 4px 7px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 70%;
+  }
+}
+.title {
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 42px;
+  color: #6f0174;
+}
+.lineOnTop {
+  background: #d9d9d9;
+  border-radius: 0px 0px 100px 100px;
+  position: absolute;
+  width: 180px;
+  top: 0px;
+  height: 20px;
+  width: 40%;
+}
+.blueLeftH1 {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 72px;
+  color: #152982;
+}
+.blueLeftH1P {
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 38px;
+  color: #081139;
+}
+.TreasuresRowContainer {
+  padding-inline-start: 5vw;
+  padding-inline-end: 5vw;
+  align-items: center;
+}
+.ImgColored {
+  width: 90%;
+}
+.portfolioPartner {
+  height: 40vh;
+  margin-inline: 5vw;
+}
+.partner {
+  width: 26% !important;
+}
+.OurWorkTitle {
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 75px;
+  color: #f38c16;
+}
+.ourWorkP {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 30px;
+  color: #152982;
+  width: 50%;
+
+  margin: 1rem auto;
+}
+.workSlide {
+  width: 40vw !important;
+  height: 70vh !important;
+  border-radius: 87px;
+  img {
+    object-fit: cover;
+    width: 100%;
+  }
+  &::before {
+    border-radius: 87px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0pc;
+    bottom: 0px;
+    content: " ";
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.5159) 0%,
+      rgba(63, 63, 63, 0.2211) 100%
+    );
+  }
+}
+.whitePg {
+  background: url("../imgs/portfolio/slidersBackgroundwhite.png") center/cover
+    no-repeat;
+}
+.blueBg {
+  background: url("../imgs/portfolio/slidersBackgroundBlue.png") center/cover
+    no-repeat;
+}
+.purpleBg {
+  background: url("../imgs/portfolio/slidersBackgroundPurple.png") center/cover
+    no-repeat;
+}
+.pinkBg {
+  background: url("../imgs/portfolio/slidersBackgroundPink.png") center/cover
+    no-repeat;
+}
+.sianBg {
+  background: url("../imgs/portfolio/slidersBackgroundSian.png") center/cover
+    no-repeat;
+}
+.GraphicDesign {
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+.PromotionalH1 {
+  width: 40%;
+  margin: 0px 30px 0px 0px;
+  text-align: start !important;
+}

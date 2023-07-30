@@ -1,0 +1,114 @@
+.nav-link {
+  color: white !important;
+}
+
+.navbar {
+  position: relative;
+  z-index: 66;
+  .active {
+    position: relative;
+
+    .nav-link {
+      color: #0ae3da !important;
+    }
+
+    &::before {
+      content: " ";
+      position: absolute;
+      top: -27px;
+      background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(-261.11%, rgba(10, 227, 218, 0)),
+        to(#0ae3da)
+      );
+      background: linear-gradient(
+        180deg,
+        rgba(10, 227, 218, 0) -261.11%,
+        #0ae3da 100%
+      );
+      border-radius: 0px 0px 100px 100px;
+      left: 0%;
+      width: 100%;
+      height: 5px;
+
+      @include media("<=tablet") {
+        display: none;
+      }
+    }
+  }
+}
+
+.contact {
+  border-radius: 63px;
+
+  background: linear-gradient(
+    180deg,
+    rgba(0, 39, 211, 0.468) 0%,
+    rgba(8, 29, 120, 0.3432) 100%
+  );
+  box-shadow: 0px 4px 11px rgba(1, 23, 119, 0.29);
+  backdrop-filter: blur(3px);
+  border-radius: 100px;
+  padding: 0.5rem;
+  margin-inline: 0.5rem;
+
+  .icons {
+    margin-inline: 0.2rem;
+    position: relative;
+    .icon {
+      margin-inline: 0.5rem;
+      padding: 0.2rem;
+
+      img {
+        width: 30px;
+      }
+    }
+  }
+
+  .light-dark-mode {
+    .dark {
+      border-top-left-radius: 100px;
+      border-bottom-left-radius: 100px;
+      padding-left: 0.8rem;
+    }
+
+    .light {
+      border-top-right-radius: 100px;
+      border-bottom-right-radius: 100px;
+      padding-right: 0.8rem;
+    }
+
+    button {
+      padding: 0.5rem;
+      background: linear-gradient(
+        182.43deg,
+        rgba(22, 28, 120, 0.2) -22.47%,
+        rgba(238, 238, 238, 0.112) 97.97%
+      );
+
+      &:active,
+      &:focus-visible {
+        background: linear-gradient(
+          182.43deg,
+          rgba(74, 82, 216, 0.2) -22.47%,
+          rgba(238, 238, 238, 0.112) 97.97%
+        );
+      }
+
+      @include Clear-button;
+    }
+
+    margin-inline: 0.2rem;
+    box-shadow: 0px 8px 20px #0f1b59;
+    backdrop-filter: blur(10px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 100px;
+  }
+}
+.termsDataTitle {
+  @include media("<phone") {
+    font-size: 1rem !important;
+  }
+}

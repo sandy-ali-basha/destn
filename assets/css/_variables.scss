@@ -1,0 +1,27 @@
+$primary_blue: #132575;
+$body_bg: #e5e5e5;
+$orange: #f38c16;
+$purple: #6f0174;
+$body-font-family: "Cairo";
+$body-color: $primary_blue;
+$border-radius: 63px;
+$box-shadow: 0px 6px 22px rgba(137, 137, 137, 0.25);
+
+@mixin Clear-button {
+  border: none;
+  background-color: transparent;
+
+  &:hover,
+  &:active,
+  &:focus-visible,
+  &:focus-within {
+    outline: none;
+    border: none;
+  }
+}
+
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
